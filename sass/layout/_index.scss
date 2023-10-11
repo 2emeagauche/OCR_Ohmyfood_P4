@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as v;
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: v.$main-bg-col;
+}
+
+.main-container {
+  width: 100%;
+}
