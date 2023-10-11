@@ -1,5 +1,27 @@
-$main-color: #9356DC;
+@use 'abstracts/variables' as v;
+// @use 'abstracts/functions';
+// @use 'abstracts/mixins';
+// @use 'abstracts/placeholders';
 
-h1{
-  color:$main-color;
-}
+// @use 'base/reset';
+// @use 'base/typography';
+
+// @use 'layout/navigation';
+// @use 'layout/grid';
+// @use 'layout/header';
+// @use 'layout/footer';
+// @use 'layout/sidebar';
+// @use 'layout/forms';
+
+// @use 'components/buttons';
+// @use 'components/carousel';
+// @use 'components/cover';
+// @use 'components/dropdown';
+
+// @use 'pages/home';
+// @use 'pages/contact';
+
+// @use 'themes/theme';
+// @use 'themes/admin';
+
+h1{color: v.$main-col;}
