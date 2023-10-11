@@ -25,27 +25,89 @@
       </header>
       <main>
         <section class="presentation">
-          <h2 class="presentation__title"></h2>
-          <p class="presentation__text"></p>
-          <button class="presentation__cta"></button>
+          <h2 class="presentation__title">
+            Réservez le menu qui vous convient
+          </h2>
+          <p class="presentation__text">
+            Découvrez des restaurants d’exception, sélectionnés par nos soins.
+          </p>
+          <a class="presentation__cta" href="#restaurantsAnchor"
+            >Explorer nos restaurants</a
+          >
         </section>
         <section class="tutorial">
-          <h2 class="tutorial__title"></h2>
+          <h2 class="tutorial__title">Fonctionnement</h2>
           <ol class="tutorial__list">
             <li class="tutorial__step tutorial__step--1">
-              <p></p>
+              <p>Choisissez un restaurant</p>
             </li>
             <li class="tutorial__step tutorial__step--2">
-              <p></p>
+              <p>Composez votre menu</p>
             </li>
             <li class="tutorial__step tutorial__step--3">
-              <p></p>
+              <p>Dégustez au restaurant</p>
             </li>
           </ol>
         </section>
-        <nav class="restaurants"></nav>
+        <nav class="restaurants" id="restaurantsAnchor">
+          <h2 class="restaurants__title">Restaurants</h2>
+          <ul class="restaurants__list">
+            <li class="restaurant__card">
+              <a href="./restaurants/page1.html">
+                <img src="" alt="" />
+                <div class="restaurant__content">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                  <i class="like__satus"></i>
+                </div>
+                <i class="flagNew">Nouveau</i>
+              </a>
+            </li>
+            <li class="restaurant__card">
+              <a href="./restaurants/page2.html">
+                <img src="" alt="" />
+                <div class="restaurant__content">
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                  <i class="like__satus like__satus--enabled"></i>
+                </div>
+                <i class="flagNew">Nouveau</i></a
+              >
+            </li>
+            <li class="restaurant__card">
+              <a href="./restaurants/page3.html">
+                <img src="" alt="" />
+                <div class="restaurant__content">
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
+                  <i class="like__satus"></i></div
+              ></a>
+            </li>
+            <li class="restaurant__card">
+              <a href="./restaurants/page4.html">
+                <img src="" alt="" />
+                <div class="restaurant__content">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                  <i class="like__satus"></i></div
+              ></a>
+            </li>
+          </ul>
+        </nav>
       </main>
-      <footer></footer>
+      <footer>
+        <h2>ohmyfood</h2>
+        <nav class="nav__secondary">
+          <ul>
+            <li class="isDecorated"><a href="#">Proposer un restaurant</a></li>
+            <li class="isDecorated"><a href="#">Devenir partenaire</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
