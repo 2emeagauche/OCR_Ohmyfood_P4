@@ -14,3 +14,16 @@ body {
 .main-container {
   width: 100%;
 }
+
+.geozone {
+  background-color: v.$lt-dark-bg-col;
+}
+
+.logoZone, .tutorial {
+  background-color: v.$alt-bg-col;
+}
+
+footer{
+  background-color: v.$dark-bg-col;
+  color: v.$light-col;
+}
