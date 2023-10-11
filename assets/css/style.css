@@ -99,6 +99,20 @@ meter {
   all: revert;
 }
 
+body {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+}
+
+.presentation__title, .tutorial__title, .restaurants__title, .card__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card__title {
+  font-size: 1.125rem;
+}
+
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -112,6 +126,16 @@ body {
 
 .main-container {
   width: 100%;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

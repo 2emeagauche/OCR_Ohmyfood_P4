@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as v;
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: v.$btn-bg;
+  color: v.$light-col;
+  font-size: 1rem;
+  font-weight: 500;
+}

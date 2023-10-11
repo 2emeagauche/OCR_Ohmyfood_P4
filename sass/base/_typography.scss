@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+body{
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+}
+
+.presentation, .tutorial, .restaurants, .card {
+  &__title{
+    font-weight: 700;
+    font-size: v.$fz-1;
+  }
+}
+
+.card__title{
+  font-size: v.$fz-2;
+}

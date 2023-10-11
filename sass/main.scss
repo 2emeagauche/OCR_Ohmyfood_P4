@@ -6,6 +6,7 @@
 @use 'base/reset';
 @use 'base/typography';
 
+@use 'layout';
 // @use 'layout/grid';
 // @use 'layout/header';
 // @use 'layout/footer';
@@ -22,17 +23,4 @@
 
 
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
 
-body {
-  height: 100%;
-  margin: 0;
-  background-color: v.$main-bg-col;
-}
-
-.main-container {
-  width: 100%;
-}
