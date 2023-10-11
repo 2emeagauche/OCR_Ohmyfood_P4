@@ -15,15 +15,11 @@ body {
   width: 100%;
 }
 
-.geozone {
-  background-color: v.$lt-dark-bg-col;
-}
-
-.logoZone, .tutorial {
+.tutorial {
   background-color: v.$alt-bg-col;
 }
 
-footer{
-  background-color: v.$dark-bg-col;
-  color: v.$light-col;
+.presentation, .tutorial, .restaurants {
+  padding-left: v.$lateral-sides;
+  padding-right: v.$lateral-sides;
 }

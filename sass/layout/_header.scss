@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as v;
+
+.geozone {
+  background-color: v.$lt-dark-bg-col;
+}
+
+.logoZone {
+  background-color: v.$alt-bg-col;
+}

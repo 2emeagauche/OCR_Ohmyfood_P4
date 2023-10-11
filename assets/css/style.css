@@ -128,17 +128,30 @@ body {
   width: 100%;
 }
 
+.tutorial {
+  background-color: #FFFFFF;
+}
+
+.presentation, .tutorial, .restaurants {
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+}
+
 .geozone {
   background-color: #EAEAEA;
 }
 
-.logoZone, .tutorial {
+.logoZone {
   background-color: #FFFFFF;
 }
 
-footer {
+.footer__page {
   background-color: #353535;
   color: #FFFFFF;
+}
+.footer__logo {
+  filter: invert(1) sepia(1) saturate(0);
+  width: 98px;
 }
 
 .cta {
