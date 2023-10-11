@@ -6,17 +6,13 @@
 @use 'base/reset';
 @use 'base/typography';
 
-@use 'layout';
 // @use 'layout/grid';
 // @use 'layout/header';
 // @use 'layout/footer';
 // @use 'layout/sidebar';
 // @use 'layout/forms';
 
-// @use 'components/buttons';
-// @use 'components/carousel';
-// @use 'components/cover';
-// @use 'components/dropdown';
+@use 'components/buttons';
 
 // @use 'pages/home';
 // @use 'pages/contact';
@@ -24,4 +20,19 @@
 // @use 'themes/theme';
 // @use 'themes/admin';
 
-h1{color: v.$main-col;}
+
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: v.$main-bg-col;
+}
+
+.main-container {
+  width: 100%;
+}
