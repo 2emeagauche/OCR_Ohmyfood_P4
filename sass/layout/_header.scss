@@ -1,9 +1,33 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
 
-.geozone {
-  background-color: v.$lt-dark-bg-col;
+header{
+  position: relative;
 }
 
 .logoZone {
   background-color: v.$alt-bg-col;
+  height: 63px;
+  @include mx.center-by-flex;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.logoZone__image{
+  width: 162px;
+}
+
+.geozone {
+  background-color: v.$lt-dark-bg-col;
+  height: 63px;
+  @include mx.center-by-flex;
+  position: relative;
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: v.$dark-col;
+    @include mx.picto-before-text(url('../images/icons/pin-icon.png'));
+  }
 }

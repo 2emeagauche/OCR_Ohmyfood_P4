@@ -137,12 +137,43 @@ body {
   padding-right: 4.5%;
 }
 
-.geozone {
-  background-color: #EAEAEA;
+header {
+  position: relative;
 }
 
 .logoZone {
   background-color: #FFFFFF;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.logoZone__image {
+  width: 162px;
+}
+
+.geozone {
+  background-color: #EAEAEA;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.geozone__text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #353535;
+  position: relative;
+  padding-left: 1.5rem;
+  background-image: url("../images/icons/pin-icon.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto;
 }
 
 .footer__page {

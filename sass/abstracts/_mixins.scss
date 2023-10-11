@@ -1,0 +1,22 @@
+@mixin center-by-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin picto-before-text($imgurl, $pl: 1.5rem, $bgz: auto) {
+  position: relative;
+  padding-left: $pl;
+  background-image: $imgurl;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: $bgz;
+
+  // &::before{
+  //   content:'';
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   bottom: 0;
+  // }
+}
