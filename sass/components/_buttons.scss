@@ -9,5 +9,5 @@
   color: v.$light-col;
   font-size: 1rem;
   font-weight: 500;
-  @include mx.button-like();
+  @include mx.button-like(1.5rem, 0px, 4px, 10px, 0.25);
 }
