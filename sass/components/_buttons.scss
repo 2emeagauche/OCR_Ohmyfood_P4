@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as v;
+@use '../abstracts/mixins' as mx;
 
 .cta {
   display: flex;
@@ -8,4 +9,5 @@
   color: v.$light-col;
   font-size: 1rem;
   font-weight: 500;
+  @include mx.button-like();
 }
