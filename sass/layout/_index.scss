@@ -20,6 +20,29 @@ body {
 }
 
 .presentation, .tutorial, .restaurants, .footer__page {
-  padding-left: v.$lateral-sides;
-  padding-right: v.$lateral-sides;
+  > * {
+    max-width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: 4.5%;
+    // padding-right: 4.5%;
+  }
+  
+  @media (min-width: v.$tablet) {
+    // padding-left: 10%;
+    // padding-right: 10%;
+    > * {
+      max-width: 80%;
+    }
+  }
+    
+  @media (min-width: v.$desktop) {
+    padding-left: 25px;
+    padding-right: 25px;
+    > * {
+      max-width: 1080px;
+      // margin-left: auto;
+      // margin-right: auto;
+    }
+  }
 }

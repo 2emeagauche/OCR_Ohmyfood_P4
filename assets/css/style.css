@@ -143,9 +143,24 @@ body {
   background-color: #FFFFFF;
 }
 
-.presentation, .tutorial, .restaurants, .footer__page {
-  padding-left: 4.5%;
-  padding-right: 4.5%;
+.presentation > *, .tutorial > *, .restaurants > *, .footer__page > * {
+  max-width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .presentation > *, .tutorial > *, .restaurants > *, .footer__page > * {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .presentation, .tutorial, .restaurants, .footer__page {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .presentation > *, .tutorial > *, .restaurants > *, .footer__page > * {
+    max-width: 1080px;
+  }
 }
 
 header {
