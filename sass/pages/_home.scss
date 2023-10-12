@@ -76,6 +76,17 @@
       display: block;
       position: relative;
     }
+    .flagNew {
+      color: v.$third-col-dk;
+      padding: 0.4rem 0.7rem;
+      background: v.$third-col;
+      border-radius: 0.125rem;
+      font-size: v.$fz-4;
+      font-weight: 500;
+      position: absolute;
+      top: 0.813rem;
+      right: 0.813rem;
+    }
   }
   &__image {
     border-radius: 0.95rem 0.95rem 0 0;
