@@ -2,12 +2,30 @@
 @use '../abstracts/mixins' as mx;
 
 .cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: v.$btn-bg;
+  @include mx.center-by-flex;
   color: v.$light-col;
   font-size: 1rem;
   font-weight: 500;
-  @include mx.button-like(1.5rem, 0px, 4px, 10px, 0.25);
+  position: relative;
+  .cta__text{
+    background: v.$btn-bg;
+    @include mx.button-like(2rem, 0px, 4px, 10px, 0.25);
+    padding: 1rem 1.5rem;
+    transition: box-shadow 200ms;
+  }
+  &::before{
+    @include mx.before-after;
+    @include mx.button-like(2rem, 0px, 0px, 0px, 0);
+    background-color: white;
+    opacity: 0;
+    transition: opacity 400ms;
+  }
+  &:hover {
+    .cta__text {
+      @include mx.button-like(2rem, 0px, 4px, 15px, 0.35);
+    }
+    &::before {
+      opacity: 0.15;
+    }
+  }
 }
