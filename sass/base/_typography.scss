@@ -19,3 +19,12 @@ body{
 .tutorial__step {
   font-weight: 500;
 }
+
+.restaurant__content {
+  .card__tile {
+    font-size: v.$fz-2;
+  }
+  p {
+    font-size: v.$fz-3;
+  }
+}
