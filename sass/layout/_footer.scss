@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
 
 .footer{
   &__page {
@@ -16,10 +17,24 @@
   }
 
   &__nav {
-    li:not(:last-child) {
+    li {
+      font-weight: 400;
+      &:not(:last-child) {
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+      }
+    }
+
+    .isDecorated li {
       font-weight: 500;
-      padding-top: 0.3rem;
-      padding-bottom: 0.3rem;
+    }
+
+    .proposing {
+      @include mx.picto-before-text(url('../images/icons/ustensils-icon.png'), 1.3rem);
+    }
+
+    .partnership {
+      @include mx.picto-before-text(url('../images/icons/handshake-icon.png'), 1.3rem);
     }
   }
 }
