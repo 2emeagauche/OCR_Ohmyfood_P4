@@ -288,14 +288,6 @@ header {
   border-radius: 1.25rem;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.tutorial__step p {
-  position: relative;
-  padding-left: 2.5rem;
-  background-image: url("../images/icons/mobile-app-icon.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: auto;
-}
 .tutorial__step--1::before {
   content: "";
   position: absolute;
@@ -319,10 +311,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-.tutorial__step p {
+.tutorial__step--1 p {
   position: relative;
   padding-left: 2.5rem;
-  background-image: url("../images/icons/mobile-app-icon.png");
+  background-image: url("../images/icons/tuto-icon-1.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto;
@@ -350,10 +342,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-.tutorial__step p {
+.tutorial__step--2 p {
   position: relative;
   padding-left: 2.5rem;
-  background-image: url("../images/icons/mobile-app-icon.png");
+  background-image: url("../images/icons/tuto-icon-2.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto;
@@ -380,6 +372,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.tutorial__step--3 p {
+  position: relative;
+  padding-left: 2.5rem;
+  background-image: url("../images/icons/tuto-icon-3.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

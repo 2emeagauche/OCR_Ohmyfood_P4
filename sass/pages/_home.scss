@@ -35,23 +35,25 @@
     position: relative;
     @include mx.button-like(1.25rem, 0px, 4px, 15px, 0.15);
     @for $i from 1 through 3 {
-      p {
-        @include mx.picto-before-text(url('../images/icons/mobile-app-icon.png'), 2.5rem);
-      }
-      &--#{$i}::before {
-        @include mx.before-after;
-        content:'#{$i}';
-        font-size: 0.875rem;
-        color: v.$light-col;
-        top: 1.7rem;
-        right: auto;
-        bottom: auto;
-        left: -0.75rem;
-        background-color: v.$main-col;
-        border-radius: 1rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        @include mx.center-by-flex;
+      &--#{$i} {
+        &::before {
+          @include mx.before-after;
+          content:'#{$i}';
+          font-size: 0.875rem;
+          color: v.$light-col;
+          top: 1.7rem;
+          right: auto;
+          bottom: auto;
+          left: -0.75rem;
+          background-color: v.$main-col;
+          border-radius: 1rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          @include mx.center-by-flex;
+        }
+        p {
+          @include mx.picto-before-text(url('../images/icons/tuto-icon-#{$i}.png'), 2.5rem);
+        }
       }
     }
   }
