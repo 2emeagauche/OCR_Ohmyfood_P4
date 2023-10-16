@@ -16,6 +16,7 @@ header{
 
 .logoZone__image{
   width: 162px;
+  margin-top: 8px;
 }
 
 .geozone {
@@ -30,4 +31,23 @@ header{
     color: v.$dark-col;
     @include mx.picto-before-text(url('../images/icons/pin-icon.png'));
   }
+}
+
+// pages restaurant
+.page-restaurant {
+  .logoZone {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+.back-home {
+  position: absolute;
+  left: 4.5%;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
