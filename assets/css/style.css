@@ -437,6 +437,17 @@ header {
 .restaurants__title {
   margin-bottom: 1.625rem;
 }
+@media (min-width: 768px) {
+  .restaurants {
+    padding-top: 1.875rem;
+  }
+  .restaurants__list {
+    display: flex;
+    column-gap: 9%;
+    row-gap: 3.125rem;
+    flex-wrap: wrap;
+  }
+}
 
 .restaurant__card {
   margin-bottom: 1.125rem;
@@ -457,6 +468,12 @@ header {
   position: absolute;
   top: 0.813rem;
   right: 0.813rem;
+}
+@media (min-width: 768px) {
+  .restaurant__card {
+    margin-bottom: 0;
+    flex: 1 1 40%;
+  }
 }
 .restaurant__image {
   border-radius: 0.95rem 0.95rem 0 0;
@@ -486,6 +503,16 @@ header {
 }
 .restaurant__content .like__satus--enabled {
   background-image: url("../images/icons/like-icon.png");
+}
+@media (min-width: 768px) {
+  .restaurant__content .like__satus {
+    top: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant__content {
+    margin: 1.125rem 1rem 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
