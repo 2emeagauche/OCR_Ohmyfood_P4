@@ -308,6 +308,14 @@ header {
 .tutorial__list {
   padding-left: 0.75rem;
 }
+@media (min-width: 1024px) {
+  .tutorial__list {
+    display: flex;
+    column-gap: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .tutorial__step {
   margin-bottom: 1.3rem;
   padding: 1.7rem 0 1.7rem 2.1rem;
@@ -408,6 +416,18 @@ header {
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto;
+}
+@media (min-width: 1024px) {
+  .tutorial__step {
+    margin-bottom: 0;
+    flex: 1 0 30%;
+    margin-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .tutorial {
+    padding-bottom: 3.125rem;
+  }
 }
 
 .restaurants {

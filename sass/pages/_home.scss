@@ -30,6 +30,12 @@
   }
   &__list{
     padding-left: 0.75rem;
+    @media (min-width: v.$desktop) {
+      display: flex;
+      column-gap: 0.75rem;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   &__step{
     margin-bottom: 1.3rem;
@@ -59,6 +65,16 @@
         }
       }
     }
+    
+    @media (min-width: v.$desktop) {
+      margin-bottom: 0;
+      flex: 1 0 30%;
+      margin-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: v.$desktop) {
+    padding-bottom: 3.125rem;
   }
 }
 
