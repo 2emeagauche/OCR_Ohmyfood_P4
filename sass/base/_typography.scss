@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as v;
 
 body{
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -32,5 +32,17 @@ body{
   }
   p {
     font-size: v.$fz-3;
+  }
+}
+
+// pages restaturant
+.page-restaurant {
+  .presentation {
+    text-align: left;
+    &__title {
+      font-family: 'Shrikhand', serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
   }
 }

@@ -100,7 +100,7 @@ meter {
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
@@ -128,6 +128,15 @@ body {
 }
 .restaurant__content p {
   font-size: 1.063rem;
+}
+
+.page-restaurant .presentation {
+  text-align: left;
+}
+.page-restaurant .presentation__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 
 html {
@@ -545,6 +554,10 @@ header {
   .restaurant__content {
     margin: 1.125rem 1rem 0;
   }
+}
+
+.page-restaurant .presentation__title {
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
