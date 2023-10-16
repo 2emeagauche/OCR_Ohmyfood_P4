@@ -109,6 +109,12 @@ body {
   font-size: 1.5rem;
 }
 
+@media (min-width: 1024px) {
+  .presentation__title {
+    font-size: 2.5rem;
+  }
+}
+
 .card__title {
   font-size: 1.125rem;
 }
@@ -143,26 +149,21 @@ body {
   background-color: #FFFFFF;
 }
 
-.presentation > *, .tutorial > *, .restaurants > *, .footer__page > * {
-  max-width: 91%;
+.presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .footer__page .inside-width {
+  width: 91%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .presentation > *, .tutorial > *, .restaurants > *, .footer__page > * {
-    max-width: 80%;
-  }
-}
-@media (min-width: 1024px) {
   .presentation, .tutorial, .restaurants, .footer__page {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
-  .presentation > *, .tutorial > *, .restaurants > *, .footer__page > * {
+  .presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .footer__page .inside-width {
+    width: 100%;
     max-width: 1080px;
   }
 }
-
 header {
   position: relative;
 }
@@ -287,6 +288,11 @@ header {
   width: 80%;
   margin: 0 auto 1.25rem;
 }
+@media (min-width: 768px) {
+  .presentation__title {
+    width: 100%;
+  }
+}
 .presentation__text {
   margin: 0 auto 1.7rem;
   font-size: 1.125rem;
@@ -297,7 +303,7 @@ header {
   padding-bottom: 2.5rem;
 }
 .tutorial__title {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.563rem;
 }
 .tutorial__list {
   padding-left: 0.75rem;

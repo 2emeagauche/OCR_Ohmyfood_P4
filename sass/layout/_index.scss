@@ -20,29 +20,23 @@ body {
 }
 
 .presentation, .tutorial, .restaurants, .footer__page {
-  > * {
-    max-width: 91%;
+  .inside-width {
+    width: 91%;
     margin-left: auto;
     margin-right: auto;
-    // padding-left: 4.5%;
-    // padding-right: 4.5%;
   }
   
   @media (min-width: v.$tablet) {
-    // padding-left: 10%;
-    // padding-right: 10%;
-    > * {
-      max-width: 80%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    .inside-width {
+      width: 100%;
+      max-width: 1080px;
     }
   }
     
   @media (min-width: v.$desktop) {
-    padding-left: 25px;
-    padding-right: 25px;
-    > * {
-      max-width: 1080px;
-      // margin-left: auto;
-      // margin-right: auto;
+    .inside-width {
     }
   }
 }
