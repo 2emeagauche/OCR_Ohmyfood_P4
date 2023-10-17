@@ -371,6 +371,47 @@ header {
   opacity: 0;
 }
 
+.dish {
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 0.938rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.dish h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+}
+.dish p {
+  font-size: 0.938rem;
+}
+.dish .dish__price {
+  font-size: 0.938rem;
+  font-weight: 700;
+  color: #353535;
+}
+.dish__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-right: 3.75rem;
+}
+.dish__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -3.75rem;
+  top: 0;
+  bottom: 0;
+  width: 3.75rem;
+  background: #99E2D0;
+}
+
 .presentation {
   padding-top: 2.5rem;
   padding-bottom: 3.5rem;
@@ -658,46 +699,6 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.dish {
-  border-radius: 1.5rem;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  padding: 0.938rem;
-  margin-bottom: 0.75rem;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-.dish h3 {
-  font-size: 1.125rem;
-  font-weight: 500;
-  padding-bottom: 0.2rem;
-}
-.dish p {
-  font-size: 0.938rem;
-}
-.dish .dish__price {
-  font-size: 0.938rem;
-  font-weight: 700;
-  color: #353535;
-}
-.dish__content {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-.dish__status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 3.75rem;
-  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

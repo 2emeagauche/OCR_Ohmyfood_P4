@@ -30,6 +30,7 @@
   }
 }
 
+// restaurants
 .liking {
   width: 2.4rem;
   height: 2.4rem;
@@ -56,5 +57,43 @@
     img {
       opacity: 0;
     }
+  }
+}
+
+.dish {
+  @include mx.button-like($sdwAlpha: 0.1);
+  width: 100%;
+  padding: 0.938rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  h3 {
+    font-size: v.$fz-2;
+    font-weight: 500;
+    padding-bottom: 0.2rem;
+  }
+  p {
+    font-size: v.$fz-4;
+  }
+  & &__price {
+    font-size: v.$fz-4;
+    font-weight: 700;
+    color: v.$dark-col;
+  }
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: v.$dish-status-width;
+  }
+  &__status {
+    @include mx.center-by-flex;
+    position: absolute;
+    right: calc((-1)*v.$dish-status-width);
+    top: 0;
+    bottom: 0;
+    width: v.$dish-status-width;
+    background: v.$third-col;
   }
 }
