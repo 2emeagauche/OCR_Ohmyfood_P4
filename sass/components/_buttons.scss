@@ -86,7 +86,8 @@
     align-items: flex-end;
     justify-content: space-between;
     column-gap: 1rem;
-    padding-right: v.$dish-status-width;
+    padding-right: 0;
+    transition: padding-right 300ms cubic-bezier(.98,.16,.57,1.2);
   }
   &__description {
     flex: 1 1 auto;
@@ -100,11 +101,20 @@
   &__status {
     @include mx.center-by-flex;
     position: absolute;
-    // right: calc((-1)*v.$dish-status-width);
-    right: 0;
+    transform: translateX(v.$dish-status-width);
+    transition: transform 300ms cubic-bezier(.98,.16,.57,1.2);
     top: 0;
     bottom: 0;
+    right: 0;
     width: v.$dish-status-width;
     background: v.$third-col;
+  }
+  &:hover {
+    .dish__content {
+      padding-right: v.$dish-status-width;
+    }
+    .dish__status {
+      transform: translateX(0);
+    }
   }
 }
