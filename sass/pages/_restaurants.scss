@@ -1,5 +1,5 @@
 @use '../abstracts/variables' as v;
-// @use '../abstracts/mixins' as mx;
+@use '../abstracts/mixins' as mx;
 
 
 
@@ -27,8 +27,46 @@
     background-color: v.$main-bg-col;
     border-radius: 2.5rem 2.5rem 0 0;
 
-    &__title{
+    &__parent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 1rem;
+      padding-right: 1rem;
+    }
+
+    &__title {
       width: auto;
+      margin: 0;
+    }
+
+    .liking {
+      width: 2.4rem;
+      height: 2.4rem;
+      cursor: pointer;
+      @include mx.center-by-flex;
+      align-self: baseline;
+      position: relative;
+      &::before {
+        @include mx.before-after;
+        background-image: url('../images/icons/like-icon.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: scale(0%);
+        transition: transform 300ms cubic-bezier(.78,0,.61,1.28);
+      }
+      img {
+        opacity: 1;
+        transition: opacity 300ms cubic-bezier(.78,0,.61,1.28);
+      }
+      &:hover {
+        &::before {
+          transform: scale(100%);
+        }
+        img {
+          opacity: 0;
+        }
+      }
     }
   }
 }

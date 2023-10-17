@@ -594,8 +594,50 @@ header {
   background-color: #F6F6F6;
   border-radius: 2.5rem 2.5rem 0 0;
 }
+.page-restaurant .presentation__parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  padding-right: 1rem;
+}
 .page-restaurant .presentation__title {
   width: auto;
+  margin: 0;
+}
+.page-restaurant .presentation .liking {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: baseline;
+  position: relative;
+}
+.page-restaurant .presentation .liking::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url("../images/icons/like-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: scale(0%);
+  transition: transform 300ms cubic-bezier(0.78, 0, 0.61, 1.28);
+}
+.page-restaurant .presentation .liking img {
+  opacity: 1;
+  transition: opacity 300ms cubic-bezier(0.78, 0, 0.61, 1.28);
+}
+.page-restaurant .presentation .liking:hover::before {
+  transform: scale(100%);
+}
+.page-restaurant .presentation .liking:hover img {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
