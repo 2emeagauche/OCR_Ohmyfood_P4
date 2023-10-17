@@ -158,17 +158,17 @@ body {
   background-color: #FFFFFF;
 }
 
-.presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .footer__page .inside-width {
+.presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .menus .inside-width, .footer__page .inside-width {
   width: 91%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .presentation, .tutorial, .restaurants, .footer__page {
+  .presentation, .tutorial, .restaurants, .menus, .footer__page {
     padding-left: 1.563rem;
     padding-right: 1.563rem;
   }
-  .presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .footer__page .inside-width {
+  .presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .menus .inside-width, .footer__page .inside-width {
     width: 100%;
     max-width: 1080px;
   }
@@ -623,7 +623,7 @@ header {
 }
 .page-restaurant .presentation {
   padding-top: 2rem;
-  padding-bottom: 1.563rem;
+  padding-bottom: 2rem;
   position: relative;
   z-index: 1;
   background-color: #F6F6F6;
@@ -639,6 +639,65 @@ header {
 .page-restaurant .presentation__title {
   width: auto;
   margin: 0;
+  line-height: 2rem;
+}
+
+.menu__section h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.75rem;
+}
+.menu__section h2::after {
+  content: "";
+  width: 2.5rem;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.dish {
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 0.938rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.dish h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+}
+.dish p {
+  font-size: 0.938rem;
+}
+.dish .dish__price {
+  font-size: 0.938rem;
+  font-weight: 700;
+  color: #353535;
+}
+.dish__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.dish__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3.75rem;
+  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
