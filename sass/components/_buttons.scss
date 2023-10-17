@@ -62,6 +62,7 @@
 
 .dish {
   @include mx.button-like($sdwAlpha: 0.1);
+  background-color: v.$light-col;
   width: 100%;
   padding: 0.938rem;
   margin-bottom: 0.75rem;
