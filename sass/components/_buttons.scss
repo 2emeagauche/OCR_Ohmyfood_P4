@@ -90,7 +90,8 @@
   &__status {
     @include mx.center-by-flex;
     position: absolute;
-    right: calc((-1)*v.$dish-status-width);
+    // right: calc((-1)*v.$dish-status-width);
+    right: 0;
     top: 0;
     bottom: 0;
     width: v.$dish-status-width;

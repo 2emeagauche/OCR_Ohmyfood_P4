@@ -405,7 +405,7 @@ header {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -3.75rem;
+  right: 0;
   top: 0;
   bottom: 0;
   width: 3.75rem;
