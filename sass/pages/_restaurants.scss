@@ -39,34 +39,5 @@
       width: auto;
       margin: 0;
     }
-
-    .liking {
-      width: 2.4rem;
-      height: 2.4rem;
-      cursor: pointer;
-      @include mx.center-by-flex;
-      align-self: baseline;
-      position: relative;
-      &::before {
-        @include mx.before-after;
-        background-image: url('../images/icons/like-icon.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        transform: scale(0%);
-        transition: transform 300ms cubic-bezier(.78,0,.61,1.28);
-      }
-      img {
-        opacity: 1;
-        transition: opacity 300ms cubic-bezier(.78,0,.61,1.28);
-      }
-      &:hover {
-        &::before {
-          transform: scale(100%);
-        }
-        img {
-          opacity: 0;
-        }
-      }
-    }
   }
 }
