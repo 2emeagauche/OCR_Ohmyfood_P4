@@ -736,7 +736,7 @@ header {
   background-color: #F6F6F6;
   border-radius: 2.5rem 2.5rem 0 0;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 }
 .page-restaurant .presentation {
   width: 91%;
@@ -831,6 +831,22 @@ header {
 }
 .dish--9 {
   animation-delay: 2400ms;
+}
+
+.menu-cta {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-cta .cta__order {
+  cursor: pointer;
+}
+.menu-cta .cta__text {
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
 }
 
 /*# sourceMappingURL=style.css.map */

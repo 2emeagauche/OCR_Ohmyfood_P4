@@ -26,7 +26,7 @@
     background-color: v.$main-bg-col;
     border-radius: 2.5rem 2.5rem 0 0;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
   }
 
   .presentation {
@@ -107,4 +107,18 @@
   animation: dish v.$timing-unit;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
+}
+
+.menu-cta {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mx.center-by-flex;
+  .cta__order {
+    cursor: pointer;
+  }
+  .cta__text {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
 }
