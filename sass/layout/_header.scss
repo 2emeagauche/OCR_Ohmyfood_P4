@@ -12,6 +12,9 @@ header{
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 1;
+  @media (min-width: v.$desktop) {
+    height: 96px;
+  }
 }
 
 .logoZone__image{
@@ -50,4 +53,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: v.$desktop) {
+    left: 1.2rem;
+  }
 }
