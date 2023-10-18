@@ -9,6 +9,10 @@
   main {
     position: relative;
     padding-top: 230px;
+    
+    @media (min-width: v.$desktop) {
+      padding-top: 342px;
+    }
   }
 
   .illustration {
@@ -18,6 +22,10 @@
     position: absolute;
     top: 0;
     z-index: 0;
+    
+    @media (min-width: v.$desktop) {
+      height: 382px;
+    }
   }
 
   .main-content {

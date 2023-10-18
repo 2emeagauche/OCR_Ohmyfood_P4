@@ -20,6 +20,9 @@ header{
 .logoZone__image{
   width: 162px;
   margin-top: 8px;
+  @media (min-width: v.$desktop) {
+    width: 200px;
+  }
 }
 
 .geozone {
