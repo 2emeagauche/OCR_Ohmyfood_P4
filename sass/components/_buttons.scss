@@ -88,7 +88,7 @@
     justify-content: space-between;
     column-gap: 1rem;
     padding-right: 0;
-    transition: padding-right 300ms cubic-bezier(.98,.16,.57,1.2);
+    transition: padding-right 300ms cubic-bezier(.78,.22,.44,1.38);
   }
   &__description {
     flex: 1 1 auto;
@@ -103,7 +103,7 @@
     @include mx.center-by-flex;
     position: absolute;
     transform: translateX(v.$dish-status-width + 0.5rem);
-    transition: transform 300ms cubic-bezier(.98,.16,.57,1.2);
+    transition: transform 300ms cubic-bezier(.78,.22,.44,1.38);
     top: 0;
     bottom: 0;
     right: 0;
