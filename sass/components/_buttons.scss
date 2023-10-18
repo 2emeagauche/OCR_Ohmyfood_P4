@@ -102,12 +102,13 @@
   &__status {
     @include mx.center-by-flex;
     position: absolute;
-    transform: translateX(v.$dish-status-width);
+    transform: translateX(v.$dish-status-width + 0.5rem);
     transition: transform 300ms cubic-bezier(.98,.16,.57,1.2);
     top: 0;
     bottom: 0;
     right: 0;
-    width: v.$dish-status-width;
+    width: v.$dish-status-width + 0.5rem;
+    padding-right: 0.5rem;
     background: v.$third-col;
   }
   &:hover {
@@ -115,7 +116,7 @@
       padding-right: v.$dish-status-width;
     }
     .dish__status {
-      transform: translateX(0);
+      transform: translateX(0.5rem);
     }
   }
 }
