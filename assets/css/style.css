@@ -1,4 +1,49 @@
 @charset "UTF-8";
+@keyframes maincourses {
+  0% {
+    transform: translateY(-328.5px);
+  }
+  33.3% {
+    transform: translateY(-180px);
+  }
+  66.6% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes desserts {
+  0% {
+    transform: translateY(-652.5px);
+  }
+  16.7% {
+    transform: translateY(-450px);
+  }
+  33.4% {
+    transform: translateY(-360px);
+  }
+  50% {
+    transform: translateY(-270px);
+  }
+  66.7% {
+    transform: translateY(-180px);
+  }
+  83.3% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes dish {
+  from {
+    transform: perspective(1000px) rotateX(90deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+}
 /***
     The new CSS reset - version 1.8.5 (last updated 14.6.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -705,6 +750,7 @@ header {
 
 .menu__section {
   margin-bottom: 1.75rem;
+  background-color: #F6F6F6;
 }
 .menu__section h2 {
   font-size: 1rem;
@@ -722,6 +768,53 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.maincourses {
+  animation: maincourses 900ms;
+  animation-delay: 1800ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
+}
+
+.desserts {
+  animation: desserts 1800ms;
+  animation-delay: 900ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
+}
+
+.dish {
+  animation: dish 600ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+.dish--1 {
+  animation-delay: 0ms;
+}
+.dish--2 {
+  animation-delay: 300ms;
+}
+.dish--3 {
+  animation-delay: 600ms;
+}
+.dish--4 {
+  animation-delay: 900ms;
+}
+.dish--5 {
+  animation-delay: 1200ms;
+}
+.dish--6 {
+  animation-delay: 1500ms;
+}
+.dish--7 {
+  animation-delay: 1800ms;
+}
+.dish--8 {
+  animation-delay: 2100ms;
+}
+.dish--9 {
+  animation-delay: 2400ms;
 }
 
 /*# sourceMappingURL=style.css.map */
