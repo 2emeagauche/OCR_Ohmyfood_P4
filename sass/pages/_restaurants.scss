@@ -4,6 +4,7 @@
 
 
 .page-restaurant {
+  background-color: v.$alt-bg-col;
 
   main {
     position: relative;
@@ -19,13 +20,21 @@
     z-index: 0;
   }
 
-  .presentation {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .main-content {
     position: relative;
     z-index: 1;
     background-color: v.$main-bg-col;
     border-radius: 2.5rem 2.5rem 0 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .presentation {
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
 
     &__parent {
       display: flex;
@@ -33,6 +42,7 @@
       align-items: center;
       column-gap: 1rem;
       padding-right: 1rem;
+      padding-bottom: 2rem;
     }
 
     &__title {
@@ -43,24 +53,30 @@
   }
 }
 
-.menu__section {
-  margin-bottom: 1.75rem;
-  background-color: v.$main-bg-col;
-  h2 {
-    font-size: 1rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 0.7rem;
-    margin-bottom: 0.75rem;
-    &::after {
-      content: '';
-      width: 2.5rem;
-      height: 3px;
-      background-color: v.$third-col;
-      position: absolute;
-      bottom: 0;
-      left: 0;
+.menu {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__section {
+    margin-bottom: 1.75rem;
+    background-color: v.$main-bg-col;
+    h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 0.7rem;
+      margin-bottom: 0.75rem;
+      &::after {
+        content: '';
+        width: 2.5rem;
+        height: 3px;
+        background-color: v.$third-col;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }

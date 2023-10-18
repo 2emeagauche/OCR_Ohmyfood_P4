@@ -203,17 +203,17 @@ body {
   background-color: #FFFFFF;
 }
 
-.presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .menus .inside-width, .footer__page .inside-width {
+.presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .footer__page .inside-width {
   width: 91%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .presentation, .tutorial, .restaurants, .menus, .footer__page {
+  .presentation, .tutorial, .restaurants, .footer__page {
     padding-left: 1.563rem;
     padding-right: 1.563rem;
   }
-  .presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .menus .inside-width, .footer__page .inside-width {
+  .presentation .inside-width, .tutorial .inside-width, .restaurants .inside-width, .footer__page .inside-width {
     width: 100%;
     max-width: 1080px;
   }
@@ -715,6 +715,9 @@ header {
   }
 }
 
+.page-restaurant {
+  background-color: #FFFFFF;
+}
 .page-restaurant main {
   position: relative;
   padding-top: 230px;
@@ -727,13 +730,20 @@ header {
   top: 0;
   z-index: 0;
 }
-.page-restaurant .presentation {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.page-restaurant .main-content {
   position: relative;
   z-index: 1;
   background-color: #F6F6F6;
   border-radius: 2.5rem 2.5rem 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.page-restaurant .presentation {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .page-restaurant .presentation__parent {
   display: flex;
@@ -741,6 +751,7 @@ header {
   align-items: center;
   column-gap: 1rem;
   padding-right: 1rem;
+  padding-bottom: 2rem;
 }
 .page-restaurant .presentation__title {
   width: auto;
@@ -748,6 +759,11 @@ header {
   line-height: 2rem;
 }
 
+.menu {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .menu__section {
   margin-bottom: 1.75rem;
   background-color: #F6F6F6;
