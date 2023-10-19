@@ -50,6 +50,56 @@
     transform: perspective(1000px) rotateX(0deg);
   }
 }
+.maincourses {
+  animation: maincourses 1200ms;
+  animation-delay: 1800ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
+}
+
+.desserts {
+  animation: desserts 2100ms;
+  animation-delay: 900ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
+}
+
+.dish {
+  animation: dish 600ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+.dish--1 {
+  animation-delay: 0ms;
+}
+.dish--2 {
+  animation-delay: 300ms;
+}
+.dish--3 {
+  animation-delay: 600ms;
+}
+.dish--4 {
+  animation-delay: 900ms;
+}
+.dish--5 {
+  animation-delay: 1200ms;
+}
+.dish--6 {
+  animation-delay: 1500ms;
+}
+.dish--7 {
+  animation-delay: 1800ms;
+}
+.dish--8 {
+  animation-delay: 2100ms;
+}
+.dish--9 {
+  animation-delay: 2400ms;
+}
+.dish--10 {
+  animation-delay: 2700ms;
+}
+
 /***
     The new CSS reset - version 1.8.5 (last updated 14.6.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -834,56 +884,6 @@ header {
     width: 100%;
     max-width: 634px;
   }
-}
-
-.maincourses {
-  animation: maincourses 1200ms;
-  animation-delay: 1800ms;
-  animation-fill-mode: backwards;
-  animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
-}
-
-.desserts {
-  animation: desserts 2100ms;
-  animation-delay: 900ms;
-  animation-fill-mode: backwards;
-  animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
-}
-
-.dish {
-  animation: dish 600ms;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in-out;
-}
-.dish--1 {
-  animation-delay: 0ms;
-}
-.dish--2 {
-  animation-delay: 300ms;
-}
-.dish--3 {
-  animation-delay: 600ms;
-}
-.dish--4 {
-  animation-delay: 900ms;
-}
-.dish--5 {
-  animation-delay: 1200ms;
-}
-.dish--6 {
-  animation-delay: 1500ms;
-}
-.dish--7 {
-  animation-delay: 1800ms;
-}
-.dish--8 {
-  animation-delay: 2100ms;
-}
-.dish--9 {
-  animation-delay: 2400ms;
-}
-.dish--10 {
-  animation-delay: 2700ms;
 }
 
 .menu-cta {

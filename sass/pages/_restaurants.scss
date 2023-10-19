@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as mx;
+@use 'sass:map';
 
 
 
@@ -101,31 +102,6 @@
     width: 100%;
     max-width: 634px;
   }
-}
-
-.maincourses {
-  animation: maincourses calc(v.$starters-count * v.$timing-unit / 2);
-  animation-delay: calc((v.$maincourses-count + v.$desserts-count) * v.$timing-unit / 2);
-  animation-fill-mode: backwards;
-  animation-timing-function: cubic-bezier(.59,0,.76,1);
-}
-
-.desserts {
-  animation: desserts calc((v.$maincourses-count + v.$starters-count) * v.$timing-unit / 2);
-  animation-delay: calc(v.$desserts-count * v.$timing-unit / 2);
-  animation-fill-mode: backwards;
-  animation-timing-function: cubic-bezier(.59,0,.76,1);
-}
-
-.dish {
-  @for $i from 1 through (v.$starters-count + v.$maincourses-count + v.$desserts-count) {
-    &--#{$i} {
-      animation-delay: calc(($i - 1)*v.$timing-unit / 2);
-    }
-  }
-  animation: dish v.$timing-unit;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in-out;
 }
 
 .menu-cta {

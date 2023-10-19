@@ -1,17 +1,18 @@
 @use 'variables' as v;
+@use 'sass:map';
 
 @keyframes maincourses {
-  @for $i from 0 through v.$starters-count {
-    #{calc($i * 100 / v.$starters-count)}% {
-      transform: translateY(calc(($i - v.$starters-count) * v.$translateY-unit));
+  @for $i from 0 through map.get(v.$starters-count, "sc4") {
+    #{calc($i * 100 / map.get(v.$starters-count, "sc4"))}% {
+      transform: translateY(calc(($i - map.get(v.$starters-count, "sc4")) * v.$translateY-unit));
     }
   }
 }
 
 @keyframes desserts {
-  @for $j from 0 through (v.$starters-count + v.$maincourses-count) {
-    #{calc($j * 100 / (v.$starters-count + v.$maincourses-count))}% {
-      transform: translateY(calc(($j - (v.$starters-count + v.$maincourses-count)) * v.$translateY-unit));
+  @for $j from 0 through (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")) {
+    #{calc($j * 100 / (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")))}% {
+      transform: translateY(calc(($j - (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3"))) * v.$translateY-unit));
     }
   }
 }
@@ -23,4 +24,31 @@
   to {
     transform: perspective(1000px) rotateX(0deg);
   }
+}
+
+
+
+.maincourses {
+  animation: maincourses calc(map.get(v.$starters-count, "sc4") * v.$timing-unit / 2);
+  animation-delay: calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) * v.$timing-unit / 2);
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(.59,0,.76,1);
+}
+
+.desserts {
+  animation: desserts calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$starters-count, "sc4")) * v.$timing-unit / 2);
+  animation-delay: calc(map.get(v.$desserts-count, "dc3") * v.$timing-unit / 2);
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(.59,0,.76,1);
+}
+
+.dish {
+  @for $i from 1 through (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) {
+    &--#{$i} {
+      animation-delay: calc(($i - 1)*v.$timing-unit / 2);
+    }
+  }
+  animation: dish v.$timing-unit;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
 }
