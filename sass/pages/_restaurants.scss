@@ -104,24 +104,21 @@
 }
 
 .maincourses {
-  // transform: translateY(calc(-3 * v.$translateY-unit));
-  animation: maincourses calc(3*v.$timing-unit / 2);
-  animation-delay: calc(6*v.$timing-unit / 2);
+  animation: maincourses calc(v.$starters-count * v.$timing-unit / 2);
+  animation-delay: calc((v.$maincourses-count + v.$desserts-count) * v.$timing-unit / 2);
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.59,0,.76,1);
 }
 
 .desserts {
-  // transform: translateY(calc(-6 * v.$translateY-unit));
-  animation: desserts calc(6*v.$timing-unit / 2);
-  animation-delay: calc(3*v.$timing-unit / 2);
+  animation: desserts calc((v.$maincourses-count + v.$starters-count) * v.$timing-unit / 2);
+  animation-delay: calc(v.$desserts-count * v.$timing-unit / 2);
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.59,0,.76,1);
 }
 
 .dish {
-  // transform: perspective(1500px) rotateX(90deg);
-  @for $i from 1 through 9 {
+  @for $i from 1 through (v.$starters-count + v.$maincourses-count + v.$desserts-count) {
     &--#{$i} {
       animation-delay: calc(($i - 1)*v.$timing-unit / 2);
     }
