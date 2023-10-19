@@ -1,18 +1,19 @@
 @use 'variables' as v;
 @use 'sass:map';
 
+// default is 3 starters 3 maincourses and 3 desserts
 @keyframes maincourses {
-  @for $i from 0 through map.get(v.$starters-count, "sc4") {
-    #{calc($i * 100 / map.get(v.$starters-count, "sc4"))}% {
-      transform: translateY(calc(($i - map.get(v.$starters-count, "sc4")) * v.$translateY-unit));
+  @for $i from 0 through map.get(v.$starters-count, "sc3") {
+    #{calc($i * 100 / map.get(v.$starters-count, "sc3"))}% {
+      transform: translateY(calc(($i - map.get(v.$starters-count, "sc3")) * v.$translateY-unit));
     }
   }
 }
 
 @keyframes desserts {
-  @for $j from 0 through (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")) {
-    #{calc($j * 100 / (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")))}% {
-      transform: translateY(calc(($j - (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3"))) * v.$translateY-unit));
+  @for $j from 0 through (map.get(v.$starters-count, "sc3") + map.get(v.$maincourses-count, "mc3")) {
+    #{calc($j * 100 / (map.get(v.$starters-count, "sc3") + map.get(v.$maincourses-count, "mc3")))}% {
+      transform: translateY(calc(($j - (map.get(v.$starters-count, "sc3") + map.get(v.$maincourses-count, "mc3"))) * v.$translateY-unit));
     }
   }
 }
@@ -26,24 +27,24 @@
   }
 }
 
-
-
 .maincourses {
-  animation: maincourses calc(map.get(v.$starters-count, "sc4") * v.$timing-unit / 2);
-  animation-delay: calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) * v.$timing-unit / 2);
+  animation-name: maincourses;
+  animation-duration: calc(map.get(v.$starters-count, "sc3") * v.$timing-unit / 2);
+  animation-delay: calc((map.get(v.$desserts-count, "dc3") + map.get(v.$maincourses-count, "mc3")) * v.$timing-unit / 2);
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.59,0,.76,1);
 }
 
 .desserts {
-  animation: desserts calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$starters-count, "sc4")) * v.$timing-unit / 2);
+  animation-name: desserts;
+  animation-duration: calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$starters-count, "sc3")) * v.$timing-unit / 2);
   animation-delay: calc(map.get(v.$desserts-count, "dc3") * v.$timing-unit / 2);
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.59,0,.76,1);
 }
 
 .dish {
-  @for $i from 1 through (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) {
+  @for $i from 1 through (map.get(v.$starters-count, "sc3") + map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) {
     &--#{$i} {
       animation-delay: calc(($i - 1)*v.$timing-unit / 2);
     }
@@ -51,4 +52,43 @@
   animation: dish v.$timing-unit;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
+}
+
+// exception with 4 starters
+@keyframes maincourses-sc4 {
+  @for $i from 0 through map.get(v.$starters-count, "sc4") {
+    #{calc($i * 100 / map.get(v.$starters-count, "sc4"))}% {
+      transform: translateY(calc(($i - map.get(v.$starters-count, "sc4")) * v.$translateY-unit));
+    }
+  }
+}
+
+@keyframes desserts-sc4 {
+  @for $j from 0 through (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")) {
+    #{calc($j * 100 / (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")))}% {
+      transform: translateY(calc(($j - (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3"))) * v.$translateY-unit));
+    }
+  }
+}
+
+.count-s4-m3-d3{
+  .maincourses {
+    animation-name: maincourses-sc4;
+    animation-duration: calc(map.get(v.$starters-count, "sc4") * v.$timing-unit / 2);
+    animation-delay: calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) * v.$timing-unit / 2);
+  }
+  
+  .desserts {
+    animation-name: desserts-sc4;
+    animation-duration: calc((map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")) * v.$timing-unit / 2);
+    animation-delay: calc(map.get(v.$desserts-count, "dc3") * v.$timing-unit / 2);
+  }
+  
+  .dish {
+    @for $i from 1 through (map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) {
+      &--#{$i} {
+        animation-delay: calc(($i - 1)*v.$timing-unit / 2);
+      }
+    }
+  }
 }
