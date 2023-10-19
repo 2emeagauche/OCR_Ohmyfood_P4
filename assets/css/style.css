@@ -177,6 +177,37 @@
   animation-delay: 1350ms;
 }
 
+@keyframes hp-loader-bg {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  99% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes hp-loader {
+  0% {
+    transform: scale(100%);
+  }
+  100% {
+    transform: scale(130%);
+  }
+}
+.loader {
+  animation: hp-loader-bg 600ms 5s forwards;
+}
+.loader::before {
+  animation: hp-loader 600ms both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 /***
     The new CSS reset - version 1.8.5 (last updated 14.6.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -862,6 +893,31 @@ header {
   .restaurant__content {
     margin: 1.125rem 1rem 0;
   }
+}
+
+.loader {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 50vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+  width: 24px;
+  height: 22px;
+  background-image: url("../../assets/images/icons/like-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .page-restaurant {

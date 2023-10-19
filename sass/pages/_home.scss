@@ -162,3 +162,28 @@
     }
   }
 }
+
+.loader {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    width: 24px;
+    height: 22px;
+    background-image: url('../../assets/images/icons/like-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

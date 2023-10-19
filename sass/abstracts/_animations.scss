@@ -92,3 +92,37 @@
     }
   }
 }
+
+// loader home page
+@keyframes hp-loader-bg {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  99% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes hp-loader {
+  0% {
+    transform: scale(100%);
+  }
+  100% {
+    transform: scale(130%);
+  }
+}
+
+.loader {
+  animation: hp-loader-bg 600ms 5s forwards;
+  &::before {
+    animation: hp-loader 600ms both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
