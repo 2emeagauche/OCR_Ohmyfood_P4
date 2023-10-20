@@ -191,7 +191,7 @@
     transform: translateX(-100%);
   }
 }
-@keyframes hp-loader {
+@keyframes hp-loader-loop {
   0% {
     transform: scale(100%);
   }
@@ -200,11 +200,11 @@
   }
 }
 .loader {
-  animation: hp-loader-bg 600ms 5s forwards;
+  animation: hp-loader-bg 600ms 5000ms forwards;
 }
 .loader::before {
-  animation: hp-loader 600ms both;
-  animation-iteration-count: infinite;
+  animation: hp-loader-loop 500ms both;
+  animation-iteration-count: 9;
   animation-direction: alternate;
 }
 
