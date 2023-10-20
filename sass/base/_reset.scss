@@ -96,6 +96,6 @@ meter {
 }
 
 /* Revert Modal native behavior */
-:where(dialog:modal) {
-    all: revert;
-}
+// :where(dialog:modal) {
+//     all: revert;
+// }

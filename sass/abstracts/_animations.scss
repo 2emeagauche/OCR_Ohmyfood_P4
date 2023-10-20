@@ -111,10 +111,10 @@
 
 @keyframes hp-loader-loop {
   0% {
-    transform: scale(100%);
+    transform: scale(1);
   }
   100% {
-    transform: scale(130%);
+    transform: scale(1.3);
   }
 }
 

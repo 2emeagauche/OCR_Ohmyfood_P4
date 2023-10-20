@@ -43,7 +43,7 @@
     background-image: url('../images/icons/like-icon.png');
     background-repeat: no-repeat;
     background-position: center center;
-    transform: scale(0%);
+    transform: scale(0);
     transition: transform 300ms cubic-bezier(.78,0,.61,1.28);
   }
   img {
@@ -52,7 +52,7 @@
   }
   &:hover {
     &::before {
-      transform: scale(100%);
+      transform: scale(1);
     }
     img {
       opacity: 0;
