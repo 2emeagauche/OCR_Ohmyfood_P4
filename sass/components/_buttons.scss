@@ -20,7 +20,7 @@
     opacity: 0;
     transition: opacity 400ms;
   }
-  &:hover {
+  &:hover, &:focus {
     .cta__text {
       @include mx.button-like(2rem, 0px, 4px, 15px, 0.35);
     }
@@ -50,7 +50,7 @@
     opacity: 1;
     transition: opacity 300ms cubic-bezier(.78,0,.61,1.28);
   }
-  &:hover {
+  &:hover, &:focus {
     &::before {
       transform: scale(1);
     }
@@ -111,7 +111,7 @@
     padding-right: 0.5rem;
     background: v.$third-col;
   }
-  &:hover {
+  &:hover, &:focus {
     .dish__content {
       padding-right: v.$dish-status-width;
     }
