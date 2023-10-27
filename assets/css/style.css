@@ -46,22 +46,22 @@
 }
 .maincourses {
   animation-name: maincourses;
-  animation-duration: 450ms;
-  animation-delay: 900ms;
+  animation-duration: 600ms;
+  animation-delay: 1200ms;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
 }
 
 .desserts {
   animation-name: desserts;
-  animation-duration: 900ms;
-  animation-delay: 450ms;
+  animation-duration: 1200ms;
+  animation-delay: 600ms;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.59, 0, 0.76, 1);
 }
 
 .dish {
-  animation: dish 300ms;
+  animation: dish 400ms;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
 }
@@ -69,28 +69,28 @@
   animation-delay: 0ms;
 }
 .dish--2 {
-  animation-delay: 150ms;
+  animation-delay: 200ms;
 }
 .dish--3 {
-  animation-delay: 300ms;
+  animation-delay: 400ms;
 }
 .dish--4 {
-  animation-delay: 450ms;
-}
-.dish--5 {
   animation-delay: 600ms;
 }
+.dish--5 {
+  animation-delay: 800ms;
+}
 .dish--6 {
-  animation-delay: 750ms;
+  animation-delay: 1000ms;
 }
 .dish--7 {
-  animation-delay: 900ms;
+  animation-delay: 1200ms;
 }
 .dish--8 {
-  animation-delay: 1050ms;
+  animation-delay: 1400ms;
 }
 .dish--9 {
-  animation-delay: 1200ms;
+  animation-delay: 1600ms;
 }
 
 @keyframes maincourses-sc4 {
@@ -138,43 +138,43 @@
 }
 .count-s4-m3-d3 .maincourses {
   animation-name: maincourses-sc4;
-  animation-duration: 600ms;
-  animation-delay: 900ms;
+  animation-duration: 800ms;
+  animation-delay: 1200ms;
 }
 .count-s4-m3-d3 .desserts {
   animation-name: desserts-sc4;
-  animation-duration: 1050ms;
-  animation-delay: 450ms;
+  animation-duration: 1400ms;
+  animation-delay: 600ms;
 }
 .count-s4-m3-d3 .dish--1 {
   animation-delay: 0ms;
 }
 .count-s4-m3-d3 .dish--2 {
-  animation-delay: 150ms;
+  animation-delay: 200ms;
 }
 .count-s4-m3-d3 .dish--3 {
-  animation-delay: 300ms;
+  animation-delay: 400ms;
 }
 .count-s4-m3-d3 .dish--4 {
-  animation-delay: 450ms;
-}
-.count-s4-m3-d3 .dish--5 {
   animation-delay: 600ms;
 }
+.count-s4-m3-d3 .dish--5 {
+  animation-delay: 800ms;
+}
 .count-s4-m3-d3 .dish--6 {
-  animation-delay: 750ms;
+  animation-delay: 1000ms;
 }
 .count-s4-m3-d3 .dish--7 {
-  animation-delay: 900ms;
-}
-.count-s4-m3-d3 .dish--8 {
-  animation-delay: 1050ms;
-}
-.count-s4-m3-d3 .dish--9 {
   animation-delay: 1200ms;
 }
+.count-s4-m3-d3 .dish--8 {
+  animation-delay: 1400ms;
+}
+.count-s4-m3-d3 .dish--9 {
+  animation-delay: 1600ms;
+}
 .count-s4-m3-d3 .dish--10 {
-  animation-delay: 1350ms;
+  animation-delay: 1800ms;
 }
 
 @keyframes hp-loader-bg {
