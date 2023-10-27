@@ -104,8 +104,8 @@
     position: absolute;
     transform: translateX(v.$dish-status-width + 0.5rem);
     transition: transform 300ms cubic-bezier(.78,.22,.44,1.38);
-    top: 0;
-    bottom: 0;
+    top: -1px;
+    bottom: -1px;
     right: 0;
     width: v.$dish-status-width + 0.5rem;
     padding-right: 0.5rem;
