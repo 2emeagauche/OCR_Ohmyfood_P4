@@ -151,9 +151,17 @@
       &--enabled {
         background-image: url('../images/icons/like-icon.png');
       }
-
+      
       @media (min-width: v.$tablet) {
         top: 0.5rem;
+      }
+    }
+    .liking {
+      position: absolute;
+      top: 0;
+      right: 0.75rem;
+      @media (min-width: v.$tablet) {
+        top: 0.2rem;
       }
     }
 

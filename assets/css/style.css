@@ -881,6 +881,16 @@ header {
     top: 0.5rem;
   }
 }
+.restaurant__content .liking {
+  position: absolute;
+  top: 0;
+  right: 0.75rem;
+}
+@media (min-width: 768px) {
+  .restaurant__content .liking {
+    top: 0.2rem;
+  }
+}
 @media (min-width: 768px) {
   .restaurant__content {
     margin: 1.125rem 1rem 0;
