@@ -30,7 +30,7 @@
 .maincourses {
   animation-name: maincourses;
   animation-duration: calc(map.get(v.$starters-count, "sc3") * v.$timing-unit / 2);
-  animation-delay: calc((map.get(v.$desserts-count, "dc3") + map.get(v.$maincourses-count, "mc3")) * v.$timing-unit / 2);
+  // animation-delay: calc((map.get(v.$desserts-count, "dc3") + map.get(v.$maincourses-count, "mc3")) * v.$timing-unit / 2);
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.59,0,.76,1);
 }
@@ -38,7 +38,7 @@
 .desserts {
   animation-name: desserts;
   animation-duration: calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$starters-count, "sc3")) * v.$timing-unit / 2);
-  animation-delay: calc(map.get(v.$desserts-count, "dc3") * v.$timing-unit / 2);
+  // animation-delay: calc(map.get(v.$desserts-count, "dc3") * v.$timing-unit / 2);
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.59,0,.76,1);
 }
@@ -75,13 +75,13 @@
   .maincourses {
     animation-name: maincourses-sc4;
     animation-duration: calc(map.get(v.$starters-count, "sc4") * v.$timing-unit / 2);
-    animation-delay: calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) * v.$timing-unit / 2);
+    // animation-delay: calc((map.get(v.$maincourses-count, "mc3") + map.get(v.$desserts-count, "dc3")) * v.$timing-unit / 2);
   }
   
   .desserts {
     animation-name: desserts-sc4;
     animation-duration: calc((map.get(v.$starters-count, "sc4") + map.get(v.$maincourses-count, "mc3")) * v.$timing-unit / 2);
-    animation-delay: calc(map.get(v.$desserts-count, "dc3") * v.$timing-unit / 2);
+    // animation-delay: calc(map.get(v.$desserts-count, "dc3") * v.$timing-unit / 2);
   }
   
   .dish {
