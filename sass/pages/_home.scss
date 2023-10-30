@@ -63,6 +63,11 @@
         p {
           @include mx.picto-before-text(url('../images/icons/tuto-icon-#{$i}.png'), 2.5rem);
         }
+        &:hover {
+          p {
+            background-image: url('../images/icons/tuto-icon-over-#{$i}.png');
+          }
+        }
       }
     }
     

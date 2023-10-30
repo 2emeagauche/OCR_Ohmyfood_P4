@@ -725,6 +725,9 @@ header {
   background-position: left center;
   background-size: auto;
 }
+.tutorial__step--1:hover p {
+  background-image: url("../images/icons/tuto-icon-over-1.png");
+}
 .tutorial__step--2::before {
   content: "";
   position: absolute;
@@ -756,6 +759,9 @@ header {
   background-position: left center;
   background-size: auto;
 }
+.tutorial__step--2:hover p {
+  background-image: url("../images/icons/tuto-icon-over-2.png");
+}
 .tutorial__step--3::before {
   content: "";
   position: absolute;
@@ -786,6 +792,9 @@ header {
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto;
+}
+.tutorial__step--3:hover p {
+  background-image: url("../images/icons/tuto-icon-over-3.png");
 }
 @media (min-width: 1024px) {
   .tutorial__step {
